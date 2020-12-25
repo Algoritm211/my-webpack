@@ -89,6 +89,11 @@ module.exports = {
                 }],
             },
             {
+                test: /\.js$/,
+                exclude: '/node_modules/',
+                use: ['babel-loader'],
+            },
+            {
                 test: /\.(?:woff2)$/,
                 use: [{
                     loader: 'file-loader',
